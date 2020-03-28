@@ -14,4 +14,11 @@ public class Boolean : Argument
             return 1;
         return 0;
     }
+
+    public override string GetText()
+    {
+        if (_value)
+            return "true";
+        return "false";
+    }
 }
