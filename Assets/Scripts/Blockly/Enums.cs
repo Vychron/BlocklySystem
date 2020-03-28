@@ -7,3 +7,11 @@
     KleinerDan,
     KleinerDanOfGelijkAan
 }
+
+public enum Calculations
+{
+    Plus,
+    Min,
+    Keer,
+    GedeeldDoor
+}
