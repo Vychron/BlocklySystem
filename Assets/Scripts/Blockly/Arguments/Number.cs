@@ -12,4 +12,9 @@ public class Number : Argument
     {
         return _value;
     }
+
+    public override string GetText()
+    {
+        return _value.ToString();
+    }
 }

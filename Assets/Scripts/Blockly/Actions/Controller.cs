@@ -26,4 +26,16 @@ public class Controller : ActionController
             Execute();
         }
     }
+
+    public override string GetText()
+    {
+        string output = "";
+        int count = _actions.Count;
+
+        if (count > 0)
+            for (int i = 0; i < count; i++)
+                output += "\n" + _actions[i].GetText();
+
+        return output;
+    }
 }
